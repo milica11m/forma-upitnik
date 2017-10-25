@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="forma.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<title>Upitnik</title>
+</head>
+<body>
+<h1>Procena osobina ličnosti</h1>
+<div id="container">
+	<p id="uvod">Cilj ovog istraživanja je provera psihometrijskih karakteristika upitnika za procenu osobina ličnosti. Istraživanje se sprovodi u okviru Odseka za psihologiju, Univerziteta u Novom Sadu. Svi dobijeni podaci biće poverljivi. Učestvovanje u ispitivanju je dohrovoljno i od njega se može odustati u bilo kojem trenutku bez ikakvih posledica.</p>
+	<form>
+		<input id="pristanak" type="radio" name="pristanak" value="pristajem" required><span class="pristanak">&nbsp;&nbsp;Pristajem na učestovanje</span><br><br>
+		
+		<label>&nbsp;&nbsp;Pol:&nbsp;&nbsp;</label>
+		<input type="radio" name="pol" value="muski">Muški&nbsp;&nbsp;
+		<input type="radio" name="pol" value="zemski">Ženski<br>
+
+		<label for="rodjendan">&nbsp;&nbsp;Datum rođenja:</label>
+		<input type="date" name="rodjendan" id="rodjendan"><br>
+		
+		&nbsp;&nbsp;Obrazovanje:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<select name="obrazovanje">
+  		<option value="os">završena osnovna škola</option>
+  			<option value="ss">završena srednja škola (i srednjoškolci)</option>
+  			<option value="st">student</option>
+  			<option value="vs">završena viša škola</option>
+  			<option value="fmd">završen fakultet, master, magistarske ili doktorske studije</option>
+  		</select><br>
+		
+		&nbsp;&nbsp;Bračno stanje:&nbsp;&nbsp;&nbsp;
+		<select name="brak"> 
+			<option value="sam">sam/a</option>
+  			<option value="veza">u ljubavnoj vezi</option>
+  			<option value="brak">u braku</option>
+  			<option value="udov">udovac/a</option>
+		</select><br>
+	
+		<label for="email">&nbsp;&nbsp;E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+		<input type="email" name="email" id="email" placeholder="primer@primer.com"><br>
+			<br>
+			
+		<div class="skala">u potpunosti se slažem</div>
+		<div class="skala">delimično se slažem</div>
+		<div class="skala">podjednako se i slažem i ne slažem</div>
+		<div class="skala">delimično se ne slažem</div>
+		<div class="skala">uopšte se ne slažem</div><br><br>
+
+		<p>1. Nije mi problem da malo iskrivim istinu, da bih postigao svoj cilj.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje1" value="1" required>
+			<input class="modg" type="radio" name="pitanje1" value="2" required>
+			<input class="modg" type="radio" name="pitanje1" value="3" required>
+			<input class="modg" type="radio" name="pitanje1" value="4" required>
+			<input class="modg" type="radio" name="pitanje1" value="5" required></p>
+		<p>2. Ne vidim ništa loše u sitnim spletkama i smicalicama.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje2" value="1" required>
+			<input class="modg" type="radio" name="pitanje2" value="2" required>
+			<input class="modg" type="radio" name="pitanje2" value="3" required>
+			<input class="modg" type="radio" name="pitanje2" value="4" required>
+			<input class="modg" type="radio" name="pitanje2" value="5" required></p>
+		<p>3. Ponekad lažem kako bih ostvario svoj cilj.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje3" value="1" required>
+			<input class="modg" type="radio" name="pitanje3" value="2" required>
+			<input class="modg" type="radio" name="pitanje3" value="3" required>
+			<input class="modg" type="radio" name="pitanje3" value="4" required>
+			<input class="modg" type="radio" name="pitanje3" value="5" required></p>
+		<p>4. Iskren sam prema ljudima, čak iako mi to ponekad šteti.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje4" value="1" required>
+			<input class="modg" type="radio" name="pitanje4" value="2" required>
+			<input class="modg" type="radio" name="pitanje4" value="3" required>
+			<input class="modg" type="radio" name="pitanje4" value="4" required>
+			<input class="modg" type="radio" name="pitanje4" value="5" required></p>
+		<p>5. Obmanuo bih i blisku osobu, ukoliko bih od toga imao koristi.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje5" value="1" required>
+			<input class="modg" type="radio" name="pitanje5" value="2" required>
+			<input class="modg" type="radio" name="pitanje5" value="3" required>
+			<input class="modg" type="radio" name="pitanje5" value="4" required>
+			<input class="modg" type="radio" name="pitanje5" value="5" required></p>
+		<p>6. Znam kako da lažem ljude da bih došao do onoga što želim.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje6" value="1" required>
+			<input class="modg" type="radio" name="pitanje6" value="2" required>
+			<input class="modg" type="radio" name="pitanje6" value="3" required>
+			<input class="modg" type="radio" name="pitanje6" value="4" required>
+			<input class="modg" type="radio" name="pitanje6" value="5" required></p>
+		<p>7. Osedam krivicu kada nekoga slažem.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje7" value="1" required>
+			<input class="modg" type="radio" name="pitanje7" value="2" required>
+			<input class="modg" type="radio" name="pitanje7" value="3" required>
+			<input class="modg" type="radio" name="pitanje7" value="4" required>
+			<input class="modg" type="radio" name="pitanje7" value="5" required></p>
+		<p>8. Sklon sam ,,izvrtanju'' istine kako bih naveo ljude da se ponašaju onako kako želim.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje8" value="1" required>
+			<input class="modg" type="radio" name="pitanje8" value="2" required>
+			<input class="modg" type="radio" name="pitanje8" value="3" required>
+			<input class="modg" type="radio" name="pitanje8" value="4" required>
+			<input class="modg" type="radio" name="pitanje8" value="5" required></p>
+		<p>9. U stanju sam da iskoristim nekog zarad sopstvene dobiti.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje9" value="1" required>
+			<input class="modg" type="radio" name="pitanje9" value="2" required>
+			<input class="modg" type="radio" name="pitanje9" value="3" required>
+			<input class="modg" type="radio" name="pitanje9" value="4" required>
+			<input class="modg" type="radio" name="pitanje9" value="5" required></p>
+		<p>10. Govorim ono što mislim, makar se zamerio nekome. <br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje10" value="1" required>
+			<input class="modg" type="radio" name="pitanje10" value="2" required>
+			<input class="modg" type="radio" name="pitanje10" value="3" required>
+			<input class="modg" type="radio" name="pitanje10" value="4" required>
+			<input class="modg" type="radio" name="pitanje10" value="5" required></p>
+		<p>11. Ne osedam se loše kada slažem, ako znam da du tako lakše ostvariti ono što želim.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje11" value="1" required>
+			<input class="modg" type="radio" name="pitanje11" value="2" required>
+			<input class="modg" type="radio" name="pitanje11" value="3" required>
+			<input class="modg" type="radio" name="pitanje11" value="4" required>
+			<input class="modg" type="radio" name="pitanje11" value="5" required></p>
+		<p>12. Ponekad govorim drugima ono što žele da čuju kako bih dobio ono što hodu.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje12" value="1" required>
+			<input class="modg" type="radio" name="pitanje12" value="2" required>
+			<input class="modg" type="radio" name="pitanje12" value="3" required>
+			<input class="modg" type="radio" name="pitanje12" value="4" required>
+			<input class="modg" type="radio" name="pitanje12" value="5" required></p>
+		<p>13. Smejem se šalama koje mi nisu smešne, kako bih se dopao drugima.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje13" value="1" required>
+			<input class="modg" type="radio" name="pitanje13" value="2" required>
+			<input class="modg" type="radio" name="pitanje13" value="3" required>
+			<input class="modg" type="radio" name="pitanje13" value="4" required>
+			<input class="modg" type="radio" name="pitanje13" value="5" required></p>
+		<p>14. Uvek se ponašam onako kako osedam, bez obzira na posledice.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje14" value="1" required>
+			<input class="modg" type="radio" name="pitanje14" value="2" required>
+			<input class="modg" type="radio" name="pitanje14" value="3" required>
+			<input class="modg" type="radio" name="pitanje14" value="4" required>
+			<input class="modg" type="radio" name="pitanje14" value="5" required></p>
+		<p>15. Pokazujem brigu za druge samo kada želim da dobijem nešto od njih za uzvrat.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje15" value="1" required>
+			<input class="modg" type="radio" name="pitanje15" value="2" required>
+			<input class="modg" type="radio" name="pitanje15" value="3" required>
+			<input class="modg" type="radio" name="pitanje15" value="4" required>
+			<input class="modg" type="radio" name="pitanje15" value="5" required></p>
+		<p>16. Koristim svoj šarm kako bi drugi učinili ono što želim.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje16" value="1" required>
+			<input class="modg" type="radio" name="pitanje16" value="2" required>
+			<input class="modg" type="radio" name="pitanje16" value="3" required>
+			<input class="modg" type="radio" name="pitanje16" value="4" required>
+			<input class="modg" type="radio" name="pitanje16" value="5" required></p>
+		<p>17. Ponekad pričam o nekim svojim sitnijim problemima da bih zadobio tuđe poverenje.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje17" value="1" required>
+			<input class="modg" type="radio" name="pitanje17" value="2" required>
+			<input class="modg" type="radio" name="pitanje17" value="3" required>
+			<input class="modg" type="radio" name="pitanje17" value="4" required>
+			<input class="modg" type="radio" name="pitanje17" value="5" required></p>
+		<p>18. Ponekad u društvu ističem svoje probleme kako bih pridobio naklonost.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje18" value="1" required>
+			<input class="modg" type="radio" name="pitanje18" value="2" required>
+			<input class="modg" type="radio" name="pitanje18" value="3" required>
+			<input class="modg" type="radio" name="pitanje18" value="4" required>
+			<input class="modg" type="radio" name="pitanje18" value="5" required></p>
+		<p>19. Ne osedam krivicu kada neko ispašta za nešto za šta sam ja kriv.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje19" value="1" required>
+			<input class="modg" type="radio" name="pitanje19" value="2" required>
+			<input class="modg" type="radio" name="pitanje19" value="3" required>
+			<input class="modg" type="radio" name="pitanje19" value="4" required>
+			<input class="modg" type="radio" name="pitanje19" value="5" required></p>
+		<p>20. Podržavam načelo "cilj opravdava sredstvo".<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje20" value="1" required>
+			<input class="modg" type="radio" name="pitanje20" value="2" required>
+			<input class="modg" type="radio" name="pitanje20" value="3" required>
+			<input class="modg" type="radio" name="pitanje20" value="4" required>
+			<input class="modg" type="radio" name="pitanje20" value="5" required></p>
+		<p>21. Kad se nešto radi timski, najbitnije mi je da budem pohvaljen za svoj deo.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje21" value="1" required>
+			<input class="modg" type="radio" name="pitanje21" value="2" required>
+			<input class="modg" type="radio" name="pitanje21" value="3" required>
+			<input class="modg" type="radio" name="pitanje21" value="4" required>
+			<input class="modg" type="radio" name="pitanje21" value="5" required></p>
+		<p>22. Kada me neko povredi pravim se da ga ne primedujem kako bi se ta osoba osedala loše.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje22" value="1" required>
+			<input class="modg" type="radio" name="pitanje22" value="2" required>
+			<input class="modg" type="radio" name="pitanje22" value="3" required>
+			<input class="modg" type="radio" name="pitanje22" value="4" required>
+			<input class="modg" type="radio" name="pitanje22" value="5" required></p>
+		<p>23. Ponekad se pravim se nevešt kako bi drugi uradio posao umesto mene.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje23" value="1" required>
+			<input class="modg" type="radio" name="pitanje23" value="2" required>
+			<input class="modg" type="radio" name="pitanje23" value="3" required>
+			<input class="modg" type="radio" name="pitanje23" value="4" required>
+			<input class="modg" type="radio" name="pitanje23" value="5" required></p>
+		<p>24. Umem da se "podvucem ljudima pod kožu" da bih došao do željenog cilja.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje24" value="1" required>
+			<input class="modg" type="radio" name="pitanje24" value="2" required>
+			<input class="modg" type="radio" name="pitanje24" value="3" required>
+			<input class="modg" type="radio" name="pitanje24" value="4" required>
+			<input class="modg" type="radio" name="pitanje24" value="5" required></p>
+		<p>25. Mogu da odglumim uznemirenost kako bih druge naveo da mi pomognu.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje25" value="1" required>
+			<input class="modg" type="radio" name="pitanje25" value="2" required>
+			<input class="modg" type="radio" name="pitanje25" value="3" required>
+			<input class="modg" type="radio" name="pitanje25" value="4" required>
+			<input class="modg" type="radio" name="pitanje25" value="5" required></p>
+		<p>26. Ljubazan sam prema ljudima koji mi se ne dopadaju ako time mogu ostvariti neku korist. <br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje26" value="1" required>
+			<input class="modg" type="radio" name="pitanje26" value="2" required>
+			<input class="modg" type="radio" name="pitanje26" value="3" required>
+			<input class="modg" type="radio" name="pitanje26" value="4" required>
+			<input class="modg" type="radio" name="pitanje26" value="5" required></p>
+		<p>27. Umem da utičem na ljude i njihove postupke.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje27" value="1" required>
+			<input class="modg" type="radio" name="pitanje27" value="2" required>
+			<input class="modg" type="radio" name="pitanje27" value="3" required>
+			<input class="modg" type="radio" name="pitanje27" value="4" required>
+			<input class="modg" type="radio" name="pitanje27" value="5" required></p>
+		<p>28. Radujem se kada uspem da navedem druge da urade nešto umesto mene.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje28" value="1" required>
+			<input class="modg" type="radio" name="pitanje28" value="2" required>
+			<input class="modg" type="radio" name="pitanje28" value="3" required>
+			<input class="modg" type="radio" name="pitanje28" value="4" required>
+			<input class="modg" type="radio" name="pitanje28" value="5" required></p>
+		<p>29. Smatram da sam veštiji od vedine ljudi koje znam.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje29" value="1" required>
+			<input class="modg" type="radio" name="pitanje29" value="2" required>
+			<input class="modg" type="radio" name="pitanje29" value="3" required>
+			<input class="modg" type="radio" name="pitanje29" value="4" required>
+			<input class="modg" type="radio" name="pitanje29" value="5" required></p>
+		<p>30. Neprijatno mi je da se hvalim.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje30" value="1" required>
+			<input class="modg" type="radio" name="pitanje30" value="2" required>
+			<input class="modg" type="radio" name="pitanje30" value="3" required>
+			<input class="modg" type="radio" name="pitanje30" value="4" required>
+			<input class="modg" type="radio" name="pitanje30" value="5" required></p>
+		<p>31. Kada ja pričam, postaram se da me svi čuju.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje31" value="1" required>
+			<input class="modg" type="radio" name="pitanje31" value="2" required>
+			<input class="modg" type="radio" name="pitanje31" value="3" required>
+			<input class="modg" type="radio" name="pitanje31" value="4" required>
+			<input class="modg" type="radio" name="pitanje31" value="5" required></p>
+		<p>32. Naivne osobe su same krive što ih drugi iskorišdavaju.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje32" value="1" required>
+			<input class="modg" type="radio" name="pitanje32" value="2" required>
+			<input class="modg" type="radio" name="pitanje32" value="3" required>
+			<input class="modg" type="radio" name="pitanje32" value="4" required>
+			<input class="modg" type="radio" name="pitanje32" value="5" required></p>
+		<p>33. Uživam da zbijam šalu na tuđi račun.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje33" value="1" required>
+			<input class="modg" type="radio" name="pitanje33" value="2" required>
+			<input class="modg" type="radio" name="pitanje33" value="3" required>
+			<input class="modg" type="radio" name="pitanje33" value="4" required>
+			<input class="modg" type="radio" name="pitanje33" value="5" required></p>
+		<p>34. Voleo bih da se družim sa ljudima koji imaju mnogo novca.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje34" value="1" required>
+			<input class="modg" type="radio" name="pitanje34" value="2" required>
+			<input class="modg" type="radio" name="pitanje34" value="3" required>
+			<input class="modg" type="radio" name="pitanje34" value="4" required>
+			<input class="modg" type="radio" name="pitanje34" value="5" required></p>
+		<p>35. Volim da budem u društvu uticajnih ljudi.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje35" value="1" required>
+			<input class="modg" type="radio" name="pitanje35" value="2" required>
+			<input class="modg" type="radio" name="pitanje35" value="3" required>
+			<input class="modg" type="radio" name="pitanje35" value="4" required>
+			<input class="modg" type="radio" name="pitanje35" value="5" required></p>
+		<p>36. U vedini slučajeva sam ja taj koji je u pravu.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje36" value="1" required>
+			<input class="modg" type="radio" name="pitanje36" value="2" required>
+			<input class="modg" type="radio" name="pitanje36" value="3" required>
+			<input class="modg" type="radio" name="pitanje36" value="4" required>
+			<input class="modg" type="radio" name="pitanje36" value="5" required></p>
+		<p>37. Prilično sam uverljiv, čak i kada sam ne verujem u ono što pričam.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje37" value="1" required>
+			<input class="modg" type="radio" name="pitanje37" value="2" required>
+			<input class="modg" type="radio" name="pitanje37" value="3" required>
+			<input class="modg" type="radio" name="pitanje37" value="4" required>
+			<input class="modg" type="radio" name="pitanje37" value="5" required></p>
+		<p>38. Skoro uvek uspem da isteram na svoje.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje38" value="1" required>
+			<input class="modg" type="radio" name="pitanje38" value="2" required>
+			<input class="modg" type="radio" name="pitanje38" value="3" required>
+			<input class="modg" type="radio" name="pitanje38" value="4" required>
+			<input class="modg" type="radio" name="pitanje38" value="5" required></p>
+		<p>39. Imam talenat da nateram svakoga da veruje u ono što kažem.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje39" value="1" required>
+			<input class="modg" type="radio" name="pitanje39" value="2" required>
+			<input class="modg" type="radio" name="pitanje39" value="3" required>
+			<input class="modg" type="radio" name="pitanje39" value="4" required>
+			<input class="modg" type="radio" name="pitanje39" value="5" required></p>
+		<p>40. Volim kada druge ubedim da se slože sa mnom.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje40" value="1" required>
+			<input class="modg" type="radio" name="pitanje40" value="2" required>
+			<input class="modg" type="radio" name="pitanje40" value="3" required>
+			<input class="modg" type="radio" name="pitanje40" value="4" required>
+			<input class="modg" type="radio" name="pitanje40" value="5" required></p>
+		<p>41. Skoro uvek nađem načina da od drugih dobijem ono što želim.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje41" value="1" required>
+			<input class="modg" type="radio" name="pitanje41" value="2" required>
+			<input class="modg" type="radio" name="pitanje41" value="3" required>
+			<input class="modg" type="radio" name="pitanje41" value="4" required>
+			<input class="modg" type="radio" name="pitanje41" value="5" required></p>
+		<p>42. Lako mogu da preokrenem situaciju u svoju korist.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje42" value="1" required>
+			<input class="modg" type="radio" name="pitanje42" value="2" required>
+			<input class="modg" type="radio" name="pitanje42" value="3" required>
+			<input class="modg" type="radio" name="pitanje42" value="4" required>
+			<input class="modg" type="radio" name="pitanje42" value="5" required></p>
+		<p>43. Ponekad izazivam osedaj krivice kod drugih kako bih dobio ono što želim.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje43" value="1" required>
+			<input class="modg" type="radio" name="pitanje43" value="2" required>
+			<input class="modg" type="radio" name="pitanje43" value="3" required>
+			<input class="modg" type="radio" name="pitanje43" value="4" required>
+			<input class="modg" type="radio" name="pitanje43" value="5" required></p>
+		<p>44. Umem da kažem drugima ono što žele da čuju.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje44" value="1" required>
+			<input class="modg" type="radio" name="pitanje44" value="2" required>
+			<input class="modg" type="radio" name="pitanje44" value="3" required>
+			<input class="modg" type="radio" name="pitanje44" value="4" required>
+			<input class="modg" type="radio" name="pitanje44" value="5" required></p>
+		<p>45. Ako neko uradi nešto što mi se ne sviđa, osramotim ga kako to ne bi ponovio.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje45" value="1" required>
+			<input class="modg" type="radio" name="pitanje45" value="2" required>
+			<input class="modg" type="radio" name="pitanje45" value="3" required>
+			<input class="modg" type="radio" name="pitanje45" value="4" required>
+			<input class="modg" type="radio" name="pitanje45" value="5" required></p>
+		<p>46. Namerno izazivam one koji mi se ne sviđaju.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje46" value="1" required>
+			<input class="modg" type="radio" name="pitanje46" value="2" required>
+			<input class="modg" type="radio" name="pitanje46" value="3" required>
+			<input class="modg" type="radio" name="pitanje46" value="4" required>
+			<input class="modg" type="radio" name="pitanje46" value="5" required></p>
+		<p>47. Umem da "napravim" tužno lice kako bih dobio ono što želim.<br class="media"><br class="media">
+			<input class="modg" type="radio" name="pitanje47" value="1" required>
+			<input class="modg" type="radio" name="pitanje47" value="2" required>
+			<input class="modg" type="radio" name="pitanje47" value="3" required>
+			<input class="modg" type="radio" name="pitanje47" value="4" required>
+			<input class="modg" type="radio" name="pitanje47" value="5" required></p>
+
+		<input type="submit" value="Pošalji" class="dugme">
+		<input type="reset" class="dugme">
+	</form>
+</div>
+</body>
+</html>
